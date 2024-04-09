@@ -1,3 +1,6 @@
+/**
+ * @type { import('ts-jest').ConfigSet }
+ */
 module.exports = {
   roots: ["<rootDir>"],
   transform: {
