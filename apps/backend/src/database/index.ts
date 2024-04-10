@@ -7,7 +7,7 @@ const config: PostgresDialectConfig = {
   pool: new Pool({
     database: process.env.DATABASE_NAME,
     host: process.env.DATABASE_HOST,
-    port: parseInt(process.env.DATABASE_PORT!),
+    port: process.env.DATABASE_PORT,
     max: 10,
     user: process.env.DATABASE_USERNAME,
     password: process.env.DATABASE_PASSWORD
