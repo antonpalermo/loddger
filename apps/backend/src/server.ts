@@ -3,9 +3,11 @@ import helmet from "helmet";
 import morgan from "morgan";
 import express from "express";
 
+import type { Express } from "express";
+
 import healthCheck from "./routes/health-check";
 
-const createServer = () => {
+export default function createServer(): Express {
   const app = express();
 
   app.disable("x-powered-by");
@@ -20,6 +22,4 @@ const createServer = () => {
   app.use("/health", healthCheck());
 
   return app;
-};
-
-export default createServer;
+}

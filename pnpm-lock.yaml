@@ -30,6 +30,9 @@ importers:
         specifier: ^1.10.0
         version: 1.10.0
     devDependencies:
+      '@packages/config-tsc':
+        specifier: workspace:*
+        version: link:../../packages/config-tsc
       '@types/cors':
         specifier: ^2.8.17
         version: 2.8.17
@@ -51,6 +54,8 @@ importers:
       nodemon:
         specifier: ^3.1.0
         version: 3.1.0
+
+  packages/config-tsc: {}
 
 packages:
 
