@@ -2,6 +2,15 @@
   "name": "@packages/database",
   "version": "1.0.0",
   "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "pnpm run clean && tsup",
     "clean": "rm -rf dist"
