@@ -1,0 +1,19 @@
+{
+  "name": "@packages/database",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "pnpm run clean && tsup",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "kysely": "^0.27.3",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@packages/config-tsc": "workspace:*",
+    "@types/pg": "^8.11.5",
+    "tsup": "^8.0.2"
+  },
+  "license": "MIT"
+}
