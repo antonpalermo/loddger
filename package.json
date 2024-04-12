@@ -1,8 +1,13 @@
 {
+  "name": "loddger",
   "private": true,
-  "scripts": {},
   "devDependencies": {
+    "@types/node": "^20.12.7",
+    "dotenv-cli": "^7.4.1",
     "prettier": "^3.2.5",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
   }
 }

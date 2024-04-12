@@ -8,12 +8,10 @@
   "files": [
     "dist/**"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "pnpm run clean && tsup",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "dev": "dotenv -e ../../.env -- tsc -w"
   },
   "dependencies": {
     "kysely": "^0.27.3",
@@ -24,5 +22,8 @@
     "@types/pg": "^8.11.5",
     "tsup": "^8.0.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
