@@ -1,0 +1,13 @@
+{
+  "name": "@packages/config-jest",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "jest.config.js",
+  "dependencies": {
+    "ts-jest": "^29.1.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
