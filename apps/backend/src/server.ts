@@ -5,6 +5,7 @@ import express from "express";
 
 import type { Express } from "express";
 
+import rooms from "./routes/rooms";
 import healthCheck from "./routes/health-check";
 
 export default function createServer(): Express {
@@ -19,7 +20,7 @@ export default function createServer(): Express {
     .use(express.json())
     .use(express.urlencoded({ extended: true }));
 
-  app.use("/health", healthCheck());
+  app.use("/health", healthCheck()).use("/rooms", rooms());
 
   return app;
 }

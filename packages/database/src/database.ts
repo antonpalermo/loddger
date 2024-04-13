@@ -1,5 +1,5 @@
 import { Room } from "./schemas/room";
 
 export type Database = {
-  room: Room;
+  rooms: Room;
 };
