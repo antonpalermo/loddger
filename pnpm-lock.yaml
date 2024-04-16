@@ -98,6 +98,9 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
+      '@packages/config-jest':
+        specifier: workspace:*
+        version: link:../../packages/config-jest
       '@packages/config-tsc':
         specifier: workspace:*
         version: link:../../packages/config-tsc

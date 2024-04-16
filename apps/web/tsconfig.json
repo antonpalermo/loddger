@@ -3,7 +3,8 @@
   "extends": "@packages/config-tsc/configs/vite.config.json",
   "compilerOptions": {
     "composite": true,
+    "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src", "vite.config.ts", "jest.setup.ts", "jest.config.js"]
+  "include": ["src", "vite.config.ts", "jest.setup.ts"]
 }

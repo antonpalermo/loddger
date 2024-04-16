@@ -1,12 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-export function App() {
-  return <h1>Hello from App</h1>;
-}
+import Application from "./components/Application";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <Application />
   </React.StrictMode>
 );
