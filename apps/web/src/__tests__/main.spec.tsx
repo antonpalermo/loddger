@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import App from "../src/components/Application";
+import App from "../components/Application";
 
 describe("main doc", () => {
   test("it should render app", () => {
