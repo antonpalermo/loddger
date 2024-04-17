@@ -1,0 +1,23 @@
+{
+  "name": "@packages/config-tailwindcss",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/tailwind.config.js",
+  "types": "./dist/tailwind.config.d.ts",
+  "module": "./dist/tailwind.config.mjs",
+  "files": [
+    "./dist/**"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@packages/config-tsc": "workspace:*",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "tsup": "^8.0.2"
+  },
+  "license": "MIT"
+}
